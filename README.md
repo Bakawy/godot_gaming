@@ -1,2 +1,2 @@
-# github_gaming
+# godot_gaming
 
