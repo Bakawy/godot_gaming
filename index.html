@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godot Gaming</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: 0;
+        }
+
+        pre {
+            margin: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--<h1>Hello, World!</h1>-->
+    <pre style="flex-shrink: 0;">
+Controls
+A D   - move
+W     - jump
+Space - grab
+LMB   - move ball
+    </pre>
+    <button onclick="document.getElementById('game').contentWindow.location.reload();">Click to reset</button>
+    <iframe src="exports/mouse-platformer/game.html" width="100%" style="flex-grow: 1;" id="game"></iframe>
+</body>
+</html>
